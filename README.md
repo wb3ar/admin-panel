@@ -5,7 +5,7 @@ login/registration form and admin panel for edit or delete users
 2. Создайте базу данных и импортируйте в нее таблицу из дамп-файла test.sql.
 3. Поменяйте настройки в файле - /src/settings.php
 
-Вход в админку: /admin.php
-Логин: admin@test.ru
-Пароль: 123456
+* Вход в админку: /admin.php
+* Логин: admin@test.ru
+* Пароль: 123456
  
