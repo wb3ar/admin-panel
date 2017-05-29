@@ -1,0 +1,10 @@
+<form class="form" method="POST" accept-charset="utf-8">
+    <div class="form-item<?=$t->getClass('Email', true)?>">
+        <input id="email" name="email" type="email" class="form-control" placeholder="Email" title="Email" value="<?=$t->getUserValue('Email')?>" required autofocus>
+    </div>
+    <div class="form-item">
+        <input name="password" type="password" class="form-control" placeholder="Пароль" title="Пароль" required>
+    </div>
+    <input name="token" type="hidden" value="<?=$token?>">
+    <button class="btn btn-lg btn-primary btn-block" type="submit" name="login">Войти</button>
+</form>

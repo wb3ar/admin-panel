@@ -1,0 +1,118 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+}
+
+.form-panel {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-panel .checkbox {
+    font-weight: normal;
+}
+
+.form-panel .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-panel .form-control:focus {
+    z-index: 3;
+}
+
+.form-panel .form-item:not(:first-child):not(:last-of-type) .form-control {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+.form-panel .form-item:first-child .form-control {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-panel .form-item:last-of-type .form-control {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-panel a {
+  text-decoration: none;
+}
+
+.data-list {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.data-list a:hover {
+  text-decoration: none;
+}
+
+.data-list li {
+    white-space: nowrap;
+}
+
+.data-list li span {
+    max-width: 250px;
+    overflow: hidden;
+}
+
+.has-error input {
+    z-index: 2;
+}
+
+.has-success input {
+    z-index: 1;
+}
+
+.alert-user {
+    max-width: 500px;
+    margin: 20px auto 0px;
+}
+
+.alert-admin {
+    max-width: none;
+    margin: 20px auto;
+}
+
+.user-value {
+  overflow: hidden;
+}
+
+.table-hover > tbody > tr:hover td {
+    background-color: #D5E3EF;
+}
+.table-hover > tbody > tr:hover th {
+  background-color: #f9f9f9;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+
+.form-panel a {
+  outline: none;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.margin-top {
+  margin-top: 40px;
+}
+
+.form-panel select.form-control {
+  padding-left: 5px;
+}

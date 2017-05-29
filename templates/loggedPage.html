@@ -1,0 +1,35 @@
+<?php require "top.html" ?>
+<div class="data-list">
+    <a class="pull-right" href="/?logout">
+        <h3 class="margin-none">Выход</h3>
+    </a>
+    <h3>Ваши данные</h3>
+    <ul class="list-group">
+        <li class="list-group-item clearfix">
+            <div class="col-xs-4">Имя</div>
+            <div class="col-xs-8 text-right user-value">
+                <?=$t->getUserValue('FirstName')?>
+            </div>
+        </li>
+        <li class="list-group-item clearfix">
+            <div class="col-xs-4">Фамилия</div>
+            <div class="col-xs-8 text-right user-value">
+                <?=$t->getUserValue('LastName')?>
+            </div>
+
+        </li>
+        <li class="list-group-item clearfix">
+            <div class="col-xs-4">Год рождения</div>
+            <div class="col-xs-8 text-right user-value">
+                <?=$t->getUserValue('YearOfBirth')?>
+            </div>
+        </li>
+        <li class="list-group-item clearfix">
+            <div class="col-xs-4">Email</div>
+            <div class="col-xs-8 text-right user-value">
+                <?=$t->getUserValue('Email')?>
+            </div>
+        </li>
+    </ul>
+</div>
+<?php require "bottom.html" ?>

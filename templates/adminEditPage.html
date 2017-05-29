@@ -1,0 +1,29 @@
+<?php require "top.html" ?>
+<?php require "adminNavbar.html" ?>
+<div class="form-panel">
+    <h3 class="pull-right">Изменить</h3>
+    <a href="admin.php<?=$page!==1?'?page='.$page:''?>">
+        <h3>Назад</h3>
+    </a>
+    <form method="POST" accept-charset="utf-8" action="/admin.php?edit=<?=$user->getId()?>">
+      <div class="form-item">
+        <select class="form-control" name="isAdmin" title="Роль">
+          <option value="1"<?=($t->getUser()->getIsAdmin()?' selected':'')?>>Администратор</option>
+          <option value="0"<?=($t->getUser()->getIsAdmin()?'':' selected')?>>Пользователь</option>
+        </select>
+      </div>
+        <?php require "regEditForm.html" ?>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="registration">Сохранить</button>
+    </form>
+</div>
+<?php if ($t->getMessageSuccess()): ?>
+<div class="alert alert-success alert-user">
+    <?=$t->getMessageSuccess()?>
+</div>
+<?php elseif ($t->getFormErrors()->getCountErrors()!==0): ?>
+<div class="alert alert-danger alert-user">
+    <?=$t->getMessageErrors()?>
+</div>
+<?php endif; ?>
+<?php require "bottom.html" ?>

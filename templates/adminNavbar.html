@@ -1,0 +1,13 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/admin.php">
+      Панель администратора
+    </a>
+        </div>
+        <div class="pull-right">
+            <span class="margin-right"><a class='margin-right' href='/admin.php?edit=<?=$adminId?>'><?=$t->escape($adminEmail)?></a></span>
+            <a href="/admin.php?logout" class="btn btn-default navbar-btn">Выход</a>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,14 @@
+<?php require "top.html" ?>
+<div class="form-panel">
+    <a class="pull-right" href="registration.php">
+        <h3>Регистрация</h3>
+    </a>
+    <h3>Вход</h3>
+    <?php require "loginForm.html" ?>
+</div>
+<?php if ($t->getFormErrors()->getCountErrors()!==0): ?>
+<div class="alert alert-danger alert-user">
+    <?=$t->getMessageErrors()?>
+</div>
+<?php endif; ?>
+<?php require "bottom.html" ?>
